@@ -59,7 +59,6 @@ class KMeans_(object):
         return labels
 
 
-
 class KMeans(object):
     """
     Parameters
@@ -112,3 +111,4 @@ class KMeans(object):
         self.data=data
         labels = np.array(list(map(lambda k: np.linalg.norm(self.data-self.centroids[k],axis=1),range(self.n_clusters)))).T.argmin(axis=1)
         return labels
+        
